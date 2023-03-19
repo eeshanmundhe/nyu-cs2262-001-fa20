@@ -3,11 +3,11 @@ from datetime import datetime
 app = Flask(__name__)
 
 
-@app.route('/')
-def hello_world():
-    return 'Hello world!'
+#@app.route('/')
+#def hello_world():
+#    return 'Hello world!'
 
-@app.route('/time')
+@app.route('/')
 def ret_time():
     return str(datetime.now())
 
